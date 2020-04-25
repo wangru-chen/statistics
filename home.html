@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title></title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div>
+			<div class="div_base_info">
+				<span>区域名称:</span>
+				<input type="text" id="text_area" value=""/>
+				<span>月预估总额:</span>
+				<input type="text" id="month_estimate" value="" />
+			</div>
+		</div>
+		<div class="div_datas">
+			<textarea v-model="body" placeholder="分别输入各店铺信息，每部分换行输入 &#10;（例：&#10;金桥&#10;100）" class="textarea-inherit" id="textarea_data" rows="12"></textarea>
+			<input type="button" value="添加" onclick="add_datas()" class="btn_style"/>
+		</div>
+		<span style="display: block; margin-top: 30px; font-size: 12px;">已录入信息</span>
+		<div class="div_op_datas" >
+			<ul id="ul_show_datas">
+
+			</ul>
+			
+		</div>
+		<input type="button" value="复制信息" onclick="get_all_info()" class="btn_style"/>
+		<span style="display: block; margin-top: 30px; font-size: 12px;">信息汇总</span>
+		<div class="div_datas_sum" id="div_datas_sum">
+			<textarea v-model="body" :placeholder="placeholder" class="textarea-inherit" id="textarea_datas_sum" rows="10"></textarea>
+		</div>
+		<input type="button" value="复制信息" onclick="get_sum_info()" class="btn_style"/>
+		
+		<textarea id="copy_tools" cols="50" rows="10" style="display: none;"></textarea>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+ul, li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.div_base_info {
+	width: 100%;
+}
+
+.div_base_info input {
+	width: 20%;
+}
+
+.div_base_info span {
+	margin-left: 20px;
+	font-size: 10px;
+}
+
+.div_datas {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.btn_style {
+	display: block;
+	float: right;
+	width: 25%;
+	border: 0px;
+	height: 25px;
+	color: white;
+	background-color: #08ACEE;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.textarea-inherit {
+	width: 95%;
+	height: 100%;
+	overflow: auto;
+	word-break: break-all;
+	padding: 10px;
+}
+
+.div_op_datas {
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+	border: 1px solid #aaa;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.div_op_datas li{
+}
+
+.div_op_datas li span {
+	display: block;
+}
+
+.div_datas_sum {
+}
